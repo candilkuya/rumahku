@@ -32,9 +32,10 @@
     
 
     <style>
-
-        
-                    .page-image {
+.adsIconMobile span{line-height:16px;color:rgba(49,53,59,0.96);font-size:12px;font-weight:bold;max-width:175px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.adsMobileWidget{position:fixed;box-shadow:rgb(0 0 0 / 15%) 0 2px 8px;top:0;left:0;right:0;height:48px;background:#ffffff;padding:0 8px;-webkit-box-pack:justify;justify-content:space-between;-webkit-box-align:center;align-items:center;z-index:32;display:flex}
+.adsIconMobile,.adsBtnMobile{cursor:pointer;height:100%;display:flex;-webkit-box-align:center;align-items:center}.adsIconMobile img{width:40px;height:40px;margin-right:8px}.mobile .adsIconMobile span{line-height:16px;color:rgba(49,53,59,0.96);font-size:12px;font-weight:bold;max-width:175px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.btnMobile{margin-right:12px;line-height:30px;border-radius:8px;text-align:center;width:78px;background:#03ac0e;color:#fff;font-weight:700;border:0;cursor:pointer}.btnMobile a{color:#fff!important}
+.page-image {
                 object-position: center;
                 
             }
@@ -118,8 +119,59 @@
         .page-overlay-btn {
             border: 2px solid #1F365C;
         }
-
-        
+        .produk-showcase{width:100%;height:auto;margin:0;padding:0;}
+.produk-showcase .produk-box{width:100%;height:264px;overflow-x:scroll;overflow-y:hidden;border:1px solid #F48FB1;background:#FCE4EC;padding:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;display:block;white-space:nowrap;}
+.produk-showcase .produk-box::-webkit-scrollbar{width:2px;height:8px;}
+.produk-showcase .produk-box::-webkit-scrollbar-thumb{background-color:#ee4d2d;}
+.produk-showcase .produk-header{background:#ee4d2d;color:#fff;font-family:Roboto,sans-serif;font-size:16px;font-weight:700;margin:0;padding:0 10px;display:block;text-align:left;height:30px;line-height:30px;text-transform:uppercase;}
+.produk-showcase .produk{position:relative;margin-right:6px;width:150px;min-height:233px;height:auto;border:1px solid #F48FB1;background:#fff;border-radius:10px;overflow:hidden;display:inline-block;white-space:normal;}
+.produk-showcase .produk.last{margin-right:0;}
+.produk-showcase .gambar-produk{width:100%;height:auto;position:absolute;top:0;left:0;}
+.produk-showcase .gambar-produk img{width:100%;height:auto;display:block}
+.produk-showcase .desk-produk{margin-top:160px;position:relative;padding:0 10px 10px;}
+.produk-showcase .desk-produk span{color:#333;font-family:Roboto,sans-serif;font-size:14px;font-weight:400;margin-bottom:5px;line-height:1.1;display:block;}
+.produk-showcase .desk-produk .harga-produk{color:#880E4F;font-family:Roboto,sans-serif;font-size:14px;font-weight:700;margin-bottom:5px;line-height:1.1;display:block;}
+.produk-showcase .desk-produk a.link-produk{background:#ee4d2d;color:#fff;font-family:Roboto,sans-serif;font-size:14px;font-weight:500;padding:8px 12px;display:block;text-align:center;}
+.produk-showcase .google-auto-placed{display:none;}
+.fixed-tabs-Whats {
+  position: fixed;
+  right: 0px;
+  bottom: 60px;
+  z-index: 100;
+}
+.aba-whatsphone {
+  background: #1EBEA5;
+  height: 60px;
+  width: 70px;
+  border-radius: 30px 0 0 30px;
+  transition: 0.7s ease;
+}
+.aba-whatsphone:hover {
+  width: 280px;
+  transition: 0.7s ease;
+}
+.aba-whatsphone-icone {
+  background-image: url(data:image/png;base64,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);
+    background-repeat: no-repeat;
+    width: 280px;
+    background-size: 44px;
+    background-position: 16px 7px;
+    padding: 7px;
+}
+.aba-whatsphone-icone a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 70px;
+  text-decoration: none;
+  height: 60px;
+  font-family: sans-serif;
+}
+.aba-whatsphone-icone a strong {
+  display: block;
+  font-size: 21px;
+  margin-left: 70px;
+}       
     </style>
     <style>
             </style>
@@ -127,6 +179,23 @@
 </head>
 
 <body>
+    <div class='topMobile section' id='topMobile' name='Barner Mobile Sticky'><div class='widget Image' data-version='2' id='Image70'>
+        <div class='adsMobileWidget'>
+        <div class='adsIconMobile'>
+        <img alt='Buka' class=' lazyloaded' data-src='//2.bp.blogspot.com/-DFwuk1-ZZGo/YJFwiAfyaXI/AAAAAAAADes/oyuCv4bdXK8LEJJjzmSLVW958qKh6JBRgCK4BGAYYCw/w120/Bank_png.png' height='120' id='Image70_img' src='//2.bp.blogspot.com/-DFwuk1-ZZGo/YJFwiAfyaXI/AAAAAAAADes/oyuCv4bdXK8LEJJjzmSLVW958qKh6JBRgCK4BGAYYCw/w120/Bank_png.png' width='120'/>
+        <span>Pasang Iklan di Semua Jaringan!</span>
+        </div>
+        <div class='adsBtnMobile'>
+        <button class='btnMobile'><a href='https://www.tiktok.com/@rumahku107'>
+        Daftar
+        </a>
+        </button>
+        <svg class='closeMobile' fill='none' height='12' onclick='document.getElementById(&quot;topMobile&quot;).style.display=&quot;none&quot;' viewBox='0 0 12 12' width='12'>
+        <path clip-rule='evenodd' d='M7.33333 5.99999L11.0293 2.30399C11.418 1.91533 11.436 1.29666 11.0693 0.93066C10.7033 0.563993 10.0847 0.581993 9.69599 0.97066L5.99999 4.66666L2.30399 0.97066C1.91533 0.581993 1.29666 0.563993 0.93066 0.93066C0.563993 1.29666 0.581993 1.91533 0.97066 2.30399L4.66666 5.99999L0.97066 9.69599C0.581993 10.0847 0.563993 10.7033 0.93066 11.0693C1.29666 11.436 1.91533 11.418 2.30399 11.0293L5.99999 7.33333L9.69599 11.0293C10.0847 11.418 10.7033 11.436 11.0693 11.0693C11.436 10.7033 11.418 10.0847 11.0293 9.69599L7.33333 5.99999Z' fill='#6C727C' fill-rule='evenodd'/>
+        </svg>
+        </div>
+        </div>
+        </div></div>
     <div class="min-h-full flex-h-center" id="background_div">
         <input type="hidden" value="https://bio.link" id="app-url">
                     <input type="hidden" value="null" id="is-featured">
@@ -152,7 +221,7 @@
         <h2 class="page-title page-text-color page-text-font mt-16 text-center">
             RUMAHKU
                 </h2>
-        
+     
                     <div class="flex-both-center flex-wrap mt-24">
                                     <div class="page-social relative">
                         <a class="social-icon-anchor" data-id="facebook" data-type="social_link" target="_blank" rel="noopener nofollow" href="https://web.facebook.com/kotasubangtercinta/"></a>
@@ -173,6 +242,142 @@
                         <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M29.402 7.73115C29.2324 7.09292 28.8982 6.51043 28.4327 6.04197C27.9672 5.57352 27.3869 5.23553 26.7498 5.06183C24.4043 4.43115 15.0293 4.43115 15.0293 4.43115C15.0293 4.43115 5.6543 4.43115 3.30884 5.06183C2.67171 5.23553 2.09137 5.57352 1.62591 6.04197C1.16044 6.51043 0.826179 7.09292 0.65657 7.73115C0.0292969 10.0868 0.0292969 14.9993 0.0292969 14.9993C0.0292969 14.9993 0.0292969 19.9118 0.65657 22.2675C0.826179 22.9057 1.16044 23.4882 1.62591 23.9567C2.09137 24.4252 2.67171 24.7631 3.30884 24.9368C5.6543 25.5675 15.0293 25.5675 15.0293 25.5675C15.0293 25.5675 24.4043 25.5675 26.7498 24.9368C27.3869 24.7631 27.9672 24.4252 28.4327 23.9567C28.8982 23.4882 29.2324 22.9057 29.402 22.2675C30.0293 19.9118 30.0293 14.9993 30.0293 14.9993C30.0293 14.9993 30.0293 10.0868 29.402 7.73115Z" fill="#FF0302"></path> <path d="M11.9619 19.4611V10.5396L19.8028 15.0003L11.9619 19.4611Z" fill="#FEFEFE"></path> </svg>                    </div>
    
                         </div>
+                        <div class='produk-showcase'>
+                            <div class='produk-header'>Rekomendasi Produk Pilihan</div>
+                            <div class='produk-box'>
+                            
+                              <div class='produk'>
+                                <div class='gambar-produk'>
+                                  <img alt='produk kesehatan' height='800' src='https://cf.shopee.sg/file/eb7d583e4b72085e71cd21a70ce47d7a' title='Produk Kesehatan' width='800' />
+                                </div>
+                                <div class='desk-produk'>
+                                  <span>Produk Kesehatan</span>
+                                  
+                                  <a class='link-produk' href='https://shope.ee/q9WmN2q9a' rel='nofollow sponsored noopener' target='_blank' title='Lihat Produk'>
+                                    Lihat Produk
+                                  </a>
+                                </div>
+                              </div>
+                             
+                              <div class='produk'>
+                                <div class='gambar-produk'>
+                                  <img alt='Produk Elektronik' height='800' src='https://cf.shopee.sg/file/dcd61dcb7c1448a132f49f938b0cb553' title='Produk Elektronik' width='800' />
+                                </div>
+                                <div class='desk-produk'>
+                                  <span>Produk Elektronik</span>
+                                  
+                                  <a class='link-produk' href='https://shope.ee/aPn1oiqP' rel='nofollow sponsored noopener' target='_blank' title='Beli Sekarang'>
+                                    Lihat Produk
+                                  </a>
+                                </div>
+                              </div>
+                             
+                              <div class='produk'>
+                                <div class='gambar-produk'>
+                                  <img alt='Fashion Muslim' height='800' src='https://cf.shopee.sg/file/b98756cdb31eabe3d7664599e24ccc29' title='Fashion Muslim' width='800' />
+                                </div>
+                                <div class='desk-produk'>
+                                  <span>Fashion Muslim</span>
+                                  
+                                  <a class='link-produk' href='https://shope.ee/6KUTKwk8ve' rel='nofollow sponsored noopener' target='_blank' title='Beli Sekarang'>
+                                    Lihat Produk
+                                  </a>
+                                </div>
+                              </div>
+                             
+                              <div class='produk'>
+                                <div class='gambar-produk'>
+                                  <img alt='aksesoris handphone murah' height='800' src='https://cf.shopee.sg/file/5230277eefafad8611aaf703d3e99568' title='Handphone dan Aksesoris' width='800' />
+                                </div>
+                                <div class='desk-produk'>
+                                  <span>Aksesoris Handphone</span>
+                                  
+                                  <a class='link-produk' href='https://shope.ee/5zrcwM74jd' rel='nofollow sponsored noopener' target='_blank' title='Beli Sekarang'>
+                                   Lihat Produk
+                                  </a>
+                                </div>
+                              </div>
+                             
+                              <div class='produk'>
+                                <div class='gambar-produk'>
+                                  <img alt='fashion bayi dan anak ' height='800' src='https://cf.shopee.sg/file/9251edd6d6dd98855ff5a99497835d9c' title='fashion bayi dan anak ' width='800' />
+                                </div>
+                                <div class='desk-produk'>
+                                  <span>Fashion Anak </span>
+                       
+                                  <a class='link-produk' href='https://shope.ee/1L5nNupaB0' rel='nofollow sponsored noopener' target='_blank' title='Beli Sekarang'>
+Lihat Produk
+                                  </a>
+                                </div>
+                              </div>
+                             
+                              <div class='produk'>
+                                <div class='gambar-produk'>
+                                  <img alt='perawatan dan Kecantikan' height='800' src='https://cf.shopee.sg/file/2715b985ae706a4c39a486f83da93c4b' title='perawatan dan kecantikan' width='800' />
+                                </div>
+                                <div class='desk-produk'>
+                                  <span>Perawatan dan Kecantikan</span>
+                                  
+                                  <a class='link-produk' href='https://shope.ee/1VPDaKI0fY' rel='nofollow sponsored noopener' target='_blank' title='Beli Sekarang'>
+                                   Lihat Produk
+                                  </a>
+                                </div>
+                              </div>
+                             
+                              <div class='produk'>
+                                <div class='gambar-produk'>
+                                  <img alt='hobi dan koleksi' height='800' src='https://cf.shopee.sg/file/42394b78fac1169d67c6291973a3b132' title='hobi dan koleksi' width='800' />
+                                </div>
+                                <div class='desk-produk'>
+                                  <span>Hobi dan Koleksi</span>
+                                  
+                                  <a class='link-produk' href='https://shope.ee/5UvMLtNJJ2' rel='nofollow sponsored noopener' target='_blank' title='Beli Sekarang'>
+                                    Lihat Produk
+                                  </a>
+                                </div>
+                              </div>
+                             
+                              <div class='produk'>
+                                <div class='gambar-produk'>
+                                  <img alt='perlengkapan rumah' height='800' src='https://cf.shopee.sg/file/c1494110e0383780cdea73ed890e0299' title='perlengkapan rumah' width='800' />
+                                </div>
+                                <div class='desk-produk'>
+                                  <span>Perlengkapan Rumah</span>
+                                  
+                                  <a class='link-produk' href='https://shope.ee/7ezqvqtT2e' rel='nofollow sponsored noopener' target='_blank' title='Beli Sekarang'>
+                                  Lihat Produk
+                                  </a>
+                                </div>
+                              </div>
+                             
+                              <div class='produk'>
+                                <div class='gambar-produk'>
+                                  <img alt='komputer dan aksesoris' height='800' src='https://cf.shopee.sg/file/290afeb96794a9870bda2a69562e2637' title='komputer dan aksesoris' width='800' />
+                                </div>
+                                <div class='desk-produk'>
+                                  <span>Komputer dan Aksesoris</span>
+ 
+                                  <a class='link-produk' href='https://shope.ee/3VAHyRH1Gq' rel='nofollow sponsored noopener' target='_blank' title='Beli Sekarang'>
+                                    Lihat Produk
+                                  </a>
+                                </div>
+                              </div>
+                             
+                              <div class='produk last'>
+                                <div class='gambar-produk'>
+                                  <img alt='otomotif' height='800' src='https://cf.shopee.sg/file/27838b968afb76ca59dd8e8f57ece91f' title='otomotif' width='800' />
+                                </div>
+                                <div class='desk-produk'>
+                                  <span>Otomotif</span>
+                                  
+                                  <a class='link-produk' href='https://shope.ee/7UgQjmB8Hw' rel='nofollow sponsored noopener' target='_blank' title='Beli Sekarang'>
+                                    Lihat Produk
+                                  </a>
+                                </div>
+                              </div>
+                             
+                            </div>
+                            </div>  
                              <div class="mt-24">
                                 <div class="page-item-wrap relative">
                                                   <div class="page-item-wrap relative">
@@ -359,11 +564,130 @@
                                                         <span class=" item-title text-center">Lokasi Kami</span>
                         </a>
                     </div>
-                                        </div>
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
+                           href="https://web.facebook.com/groups/infobaleendah/"
+                           data-id="261652" data-type="page_item">
+                                                            <img
+                                    class="link-each-image"
+                                    data-src="https://img2.pngdownload.id/20180426/isq/kisspng-internet-forum-computer-icons-online-chat-blog-cli-5ae156f2779c78.3492907215247172984899.jpg"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTklEQVRYhYVXW5YdIQgs0Ow7i8uupoV8CFLadnLPcfqlUBZQOKK//zgcABxwq2Gj7ueE+ROdQxXQNofkVQERADLnOtsc0+ayOwB3KNteP7++pKu/bucax9rM/hG7n3ruZcxrvJ55aLEFATwGJObahYF4f9p0R786zEWLPtqN+BwAoAJYOFcJ3wkIBdQNML6v0PYdEU8Ydd0AyASQ65RCoG3PAdCGbJDN2liH2T6REeaixUICiERk1vI5AYgcLFJi5xVXAJSt9hwAPIxHFZgBaoDG7s3m+8UAKJzMaIHqsEETbXeeAGwcAGQ6kgZoDxBRisaleDJLzs0AfAJ4gPEUCKJshiG1oAE6AkTqQXxbDHgxcIJ45QDvPgGMH8qFIw80GWAQSoKEYu5CfwAYO0p7gDEmgPETAJgFRNkxA3xtBwCEBlByvwFgj/94dgDJQoYLKPnVB2i/9jxIAFkJrxI/Q8C1OgjAwyCCBc6DpN1sMtAuYSDVqyqrqiIGuPwYxMFChkG0Ym8GtNid9kpEuTWlLyGyMPAvEPZE+SSAcOzRXFrutFUIMg8+Abx6wBeQCAMzsNaV8qKhlFEukvwGYG/npxxv4sQAUMo4FAA5FScA/2NgxYnRnjrOGRxCJwFQ22GYG9LF5kpCQ6dipWsuons+N7DR7R1NleNdftjuHbqAMmAgkojv43nd89D7e2RnZLuESoC+JvjNMLXe7IBpRRRoKUZapcf3kg0JBQYMDuiVNBfnSgabYuLNJGwlPK3P+l+AzjK0Co35tBc5dwdwOvYWzgXrLJhK2H4RgL4L0cqVPDtSbnmeCTU+qgNQwGPwsbv1iFlIqxwAlEAsAHwmiMoI7MjO7oY+Y+VxkEh6TuexIqkTocPIwcKrGxID6XwVgjADiK/EQGuY0tZjMbfjA0A6vwLIJpTZ7zcGpHafhw0fEf9ZMtBYyAxs1B+NaHVCol+cQiCZhMGAUQg8k4+OYiAAzMANwCp3I/pXszgY4MNm1nKCQIu4oxRP9IMBOgtsFZCbC+doqyyrDLO0xHbhyXzwA4C2+9i6YDJA58Js4zZBHgAOPWA1BErfWR1P9cv/CxZjMhNbDufRLXtBJb0Hqo43Xcf+7kv/l7jlH/ru9OyCv5F0iCNc7vbtAAAAAElFTkSuQmCC"
+                                    alt="lowongan kerja subang"
+                                />
+                                  <span class=" item-title text-center">Info Bandung Kota</span>
+                        </a>
+                    </div>
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
+                           href="https://web.facebook.com/groups/jualbelibaleendah/"
+                           data-id="261652" data-type="page_item">
+                                                            <img
+                                    class="link-each-image"
+                                    data-src="https://img2.pngdownload.id/20180426/isq/kisspng-internet-forum-computer-icons-online-chat-blog-cli-5ae156f2779c78.3492907215247172984899.jpg"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTklEQVRYhYVXW5YdIQgs0Ow7i8uupoV8CFLadnLPcfqlUBZQOKK//zgcABxwq2Gj7ueE+ROdQxXQNofkVQERADLnOtsc0+ayOwB3KNteP7++pKu/bucax9rM/hG7n3ruZcxrvJ55aLEFATwGJObahYF4f9p0R786zEWLPtqN+BwAoAJYOFcJ3wkIBdQNML6v0PYdEU8Ydd0AyASQ65RCoG3PAdCGbJDN2liH2T6REeaixUICiERk1vI5AYgcLFJi5xVXAJSt9hwAPIxHFZgBaoDG7s3m+8UAKJzMaIHqsEETbXeeAGwcAGQ6kgZoDxBRisaleDJLzs0AfAJ4gPEUCKJshiG1oAE6AkTqQXxbDHgxcIJ45QDvPgGMH8qFIw80GWAQSoKEYu5CfwAYO0p7gDEmgPETAJgFRNkxA3xtBwCEBlByvwFgj/94dgDJQoYLKPnVB2i/9jxIAFkJrxI/Q8C1OgjAwyCCBc6DpN1sMtAuYSDVqyqrqiIGuPwYxMFChkG0Ym8GtNid9kpEuTWlLyGyMPAvEPZE+SSAcOzRXFrutFUIMg8+Abx6wBeQCAMzsNaV8qKhlFEukvwGYG/npxxv4sQAUMo4FAA5FScA/2NgxYnRnjrOGRxCJwFQ22GYG9LF5kpCQ6dipWsuons+N7DR7R1NleNdftjuHbqAMmAgkojv43nd89D7e2RnZLuESoC+JvjNMLXe7IBpRRRoKUZapcf3kg0JBQYMDuiVNBfnSgabYuLNJGwlPK3P+l+AzjK0Co35tBc5dwdwOvYWzgXrLJhK2H4RgL4L0cqVPDtSbnmeCTU+qgNQwGPwsbv1iFlIqxwAlEAsAHwmiMoI7MjO7oY+Y+VxkEh6TuexIqkTocPIwcKrGxID6XwVgjADiK/EQGuY0tZjMbfjA0A6vwLIJpTZ7zcGpHafhw0fEf9ZMtBYyAxs1B+NaHVCol+cQiCZhMGAUQg8k4+OYiAAzMANwCp3I/pXszgY4MNm1nKCQIu4oxRP9IMBOgtsFZCbC+doqyyrDLO0xHbhyXzwA4C2+9i6YDJA58Js4zZBHgAOPWA1BErfWR1P9cv/CxZjMhNbDufRLXtBJb0Hqo43Xcf+7kv/l7jlH/ru9OyCv5F0iCNc7vbtAAAAAElFTkSuQmCC"
+                                    alt="lowongan kerja subang"
+                                />
+                                  <span class=" item-title text-center">Jual Beli Bandung</span>
+                        </a>
+                    </div>
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
+                           href="https://web.facebook.com/groups/sirkuitgerymangsubang/"
+                           data-id="261652" data-type="page_item">
+                                                            <img
+                                    class="link-each-image"
+                                    data-src="https://img2.pngdownload.id/20180426/isq/kisspng-internet-forum-computer-icons-online-chat-blog-cli-5ae156f2779c78.3492907215247172984899.jpg"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTklEQVRYhYVXW5YdIQgs0Ow7i8uupoV8CFLadnLPcfqlUBZQOKK//zgcABxwq2Gj7ueE+ROdQxXQNofkVQERADLnOtsc0+ayOwB3KNteP7++pKu/bucax9rM/hG7n3ruZcxrvJ55aLEFATwGJObahYF4f9p0R786zEWLPtqN+BwAoAJYOFcJ3wkIBdQNML6v0PYdEU8Ydd0AyASQ65RCoG3PAdCGbJDN2liH2T6REeaixUICiERk1vI5AYgcLFJi5xVXAJSt9hwAPIxHFZgBaoDG7s3m+8UAKJzMaIHqsEETbXeeAGwcAGQ6kgZoDxBRisaleDJLzs0AfAJ4gPEUCKJshiG1oAE6AkTqQXxbDHgxcIJ45QDvPgGMH8qFIw80GWAQSoKEYu5CfwAYO0p7gDEmgPETAJgFRNkxA3xtBwCEBlByvwFgj/94dgDJQoYLKPnVB2i/9jxIAFkJrxI/Q8C1OgjAwyCCBc6DpN1sMtAuYSDVqyqrqiIGuPwYxMFChkG0Ym8GtNid9kpEuTWlLyGyMPAvEPZE+SSAcOzRXFrutFUIMg8+Abx6wBeQCAMzsNaV8qKhlFEukvwGYG/npxxv4sQAUMo4FAA5FScA/2NgxYnRnjrOGRxCJwFQ22GYG9LF5kpCQ6dipWsuons+N7DR7R1NleNdftjuHbqAMmAgkojv43nd89D7e2RnZLuESoC+JvjNMLXe7IBpRRRoKUZapcf3kg0JBQYMDuiVNBfnSgabYuLNJGwlPK3P+l+AzjK0Co35tBc5dwdwOvYWzgXrLJhK2H4RgL4L0cqVPDtSbnmeCTU+qgNQwGPwsbv1iFlIqxwAlEAsAHwmiMoI7MjO7oY+Y+VxkEh6TuexIqkTocPIwcKrGxID6XwVgjADiK/EQGuY0tZjMbfjA0A6vwLIJpTZ7zcGpHafhw0fEf9ZMtBYyAxs1B+NaHVCol+cQiCZhMGAUQg8k4+OYiAAzMANwCp3I/pXszgY4MNm1nKCQIu4oxRP9IMBOgtsFZCbC+doqyyrDLO0xHbhyXzwA4C2+9i6YDJA58Js4zZBHgAOPWA1BErfWR1P9cv/CxZjMhNbDufRLXtBJb0Hqo43Xcf+7kv/l7jlH/ru9OyCv5F0iCNc7vbtAAAAAElFTkSuQmCC"
+                                    alt="lowongan kerja subang"
+                                />
+                                  <span class=" item-title text-center">Jual Beli Subang</span>
+                        </a>
+                    </div>
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
+                           href="https://web.facebook.com/groups/1633541370163919/"
+                           data-id="261652" data-type="page_item">
+                                                            <img
+                                    class="link-each-image"
+                                    data-src="https://img2.pngdownload.id/20180426/isq/kisspng-internet-forum-computer-icons-online-chat-blog-cli-5ae156f2779c78.3492907215247172984899.jpg"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTklEQVRYhYVXW5YdIQgs0Ow7i8uupoV8CFLadnLPcfqlUBZQOKK//zgcABxwq2Gj7ueE+ROdQxXQNofkVQERADLnOtsc0+ayOwB3KNteP7++pKu/bucax9rM/hG7n3ruZcxrvJ55aLEFATwGJObahYF4f9p0R786zEWLPtqN+BwAoAJYOFcJ3wkIBdQNML6v0PYdEU8Ydd0AyASQ65RCoG3PAdCGbJDN2liH2T6REeaixUICiERk1vI5AYgcLFJi5xVXAJSt9hwAPIxHFZgBaoDG7s3m+8UAKJzMaIHqsEETbXeeAGwcAGQ6kgZoDxBRisaleDJLzs0AfAJ4gPEUCKJshiG1oAE6AkTqQXxbDHgxcIJ45QDvPgGMH8qFIw80GWAQSoKEYu5CfwAYO0p7gDEmgPETAJgFRNkxA3xtBwCEBlByvwFgj/94dgDJQoYLKPnVB2i/9jxIAFkJrxI/Q8C1OgjAwyCCBc6DpN1sMtAuYSDVqyqrqiIGuPwYxMFChkG0Ym8GtNid9kpEuTWlLyGyMPAvEPZE+SSAcOzRXFrutFUIMg8+Abx6wBeQCAMzsNaV8qKhlFEukvwGYG/npxxv4sQAUMo4FAA5FScA/2NgxYnRnjrOGRxCJwFQ22GYG9LF5kpCQ6dipWsuons+N7DR7R1NleNdftjuHbqAMmAgkojv43nd89D7e2RnZLuESoC+JvjNMLXe7IBpRRRoKUZapcf3kg0JBQYMDuiVNBfnSgabYuLNJGwlPK3P+l+AzjK0Co35tBc5dwdwOvYWzgXrLJhK2H4RgL4L0cqVPDtSbnmeCTU+qgNQwGPwsbv1iFlIqxwAlEAsAHwmiMoI7MjO7oY+Y+VxkEh6TuexIqkTocPIwcKrGxID6XwVgjADiK/EQGuY0tZjMbfjA0A6vwLIJpTZ7zcGpHafhw0fEf9ZMtBYyAxs1B+NaHVCol+cQiCZhMGAUQg8k4+OYiAAzMANwCp3I/pXszgY4MNm1nKCQIu4oxRP9IMBOgtsFZCbC+doqyyrDLO0xHbhyXzwA4C2+9i6YDJA58Js4zZBHgAOPWA1BErfWR1P9cv/CxZjMhNbDufRLXtBJb0Hqo43Xcf+7kv/l7jlH/ru9OyCv5F0iCNc7vbtAAAAAElFTkSuQmCC"
+                                    alt="lowongan kerja subang"
+                                />
+                                  <span class=" item-title text-center">Berita Nasional</span>
+                        </a>
+                    </div>
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
+                           href="https://web.facebook.com/groups/211234097475103/"
+                           data-id="261652" data-type="page_item">
+                                                            <img
+                                    class="link-each-image"
+                                    data-src="https://img2.pngdownload.id/20180426/isq/kisspng-internet-forum-computer-icons-online-chat-blog-cli-5ae156f2779c78.3492907215247172984899.jpg"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTklEQVRYhYVXW5YdIQgs0Ow7i8uupoV8CFLadnLPcfqlUBZQOKK//zgcABxwq2Gj7ueE+ROdQxXQNofkVQERADLnOtsc0+ayOwB3KNteP7++pKu/bucax9rM/hG7n3ruZcxrvJ55aLEFATwGJObahYF4f9p0R786zEWLPtqN+BwAoAJYOFcJ3wkIBdQNML6v0PYdEU8Ydd0AyASQ65RCoG3PAdCGbJDN2liH2T6REeaixUICiERk1vI5AYgcLFJi5xVXAJSt9hwAPIxHFZgBaoDG7s3m+8UAKJzMaIHqsEETbXeeAGwcAGQ6kgZoDxBRisaleDJLzs0AfAJ4gPEUCKJshiG1oAE6AkTqQXxbDHgxcIJ45QDvPgGMH8qFIw80GWAQSoKEYu5CfwAYO0p7gDEmgPETAJgFRNkxA3xtBwCEBlByvwFgj/94dgDJQoYLKPnVB2i/9jxIAFkJrxI/Q8C1OgjAwyCCBc6DpN1sMtAuYSDVqyqrqiIGuPwYxMFChkG0Ym8GtNid9kpEuTWlLyGyMPAvEPZE+SSAcOzRXFrutFUIMg8+Abx6wBeQCAMzsNaV8qKhlFEukvwGYG/npxxv4sQAUMo4FAA5FScA/2NgxYnRnjrOGRxCJwFQ22GYG9LF5kpCQ6dipWsuons+N7DR7R1NleNdftjuHbqAMmAgkojv43nd89D7e2RnZLuESoC+JvjNMLXe7IBpRRRoKUZapcf3kg0JBQYMDuiVNBfnSgabYuLNJGwlPK3P+l+AzjK0Co35tBc5dwdwOvYWzgXrLJhK2H4RgL4L0cqVPDtSbnmeCTU+qgNQwGPwsbv1iFlIqxwAlEAsAHwmiMoI7MjO7oY+Y+VxkEh6TuexIqkTocPIwcKrGxID6XwVgjADiK/EQGuY0tZjMbfjA0A6vwLIJpTZ7zcGpHafhw0fEf9ZMtBYyAxs1B+NaHVCol+cQiCZhMGAUQg8k4+OYiAAzMANwCp3I/pXszgY4MNm1nKCQIu4oxRP9IMBOgtsFZCbC+doqyyrDLO0xHbhyXzwA4C2+9i6YDJA58Js4zZBHgAOPWA1BErfWR1P9cv/CxZjMhNbDufRLXtBJb0Hqo43Xcf+7kv/l7jlH/ru9OyCv5F0iCNc7vbtAAAAAElFTkSuQmCC"
+                                    alt="lowongan kerja subang"
+                                />
+                                  <span class=" item-title text-center">Berita Karawang Info</span>
+                        </a>
+                    </div>
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
+                           href="https://web.facebook.com/groups/274465797148650/"
+                           data-id="261652" data-type="page_item">
+                                                            <img
+                                    class="link-each-image"
+                                    data-src="https://img2.pngdownload.id/20180426/isq/kisspng-internet-forum-computer-icons-online-chat-blog-cli-5ae156f2779c78.3492907215247172984899.jpg"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTklEQVRYhYVXW5YdIQgs0Ow7i8uupoV8CFLadnLPcfqlUBZQOKK//zgcABxwq2Gj7ueE+ROdQxXQNofkVQERADLnOtsc0+ayOwB3KNteP7++pKu/bucax9rM/hG7n3ruZcxrvJ55aLEFATwGJObahYF4f9p0R786zEWLPtqN+BwAoAJYOFcJ3wkIBdQNML6v0PYdEU8Ydd0AyASQ65RCoG3PAdCGbJDN2liH2T6REeaixUICiERk1vI5AYgcLFJi5xVXAJSt9hwAPIxHFZgBaoDG7s3m+8UAKJzMaIHqsEETbXeeAGwcAGQ6kgZoDxBRisaleDJLzs0AfAJ4gPEUCKJshiG1oAE6AkTqQXxbDHgxcIJ45QDvPgGMH8qFIw80GWAQSoKEYu5CfwAYO0p7gDEmgPETAJgFRNkxA3xtBwCEBlByvwFgj/94dgDJQoYLKPnVB2i/9jxIAFkJrxI/Q8C1OgjAwyCCBc6DpN1sMtAuYSDVqyqrqiIGuPwYxMFChkG0Ym8GtNid9kpEuTWlLyGyMPAvEPZE+SSAcOzRXFrutFUIMg8+Abx6wBeQCAMzsNaV8qKhlFEukvwGYG/npxxv4sQAUMo4FAA5FScA/2NgxYnRnjrOGRxCJwFQ22GYG9LF5kpCQ6dipWsuons+N7DR7R1NleNdftjuHbqAMmAgkojv43nd89D7e2RnZLuESoC+JvjNMLXe7IBpRRRoKUZapcf3kg0JBQYMDuiVNBfnSgabYuLNJGwlPK3P+l+AzjK0Co35tBc5dwdwOvYWzgXrLJhK2H4RgL4L0cqVPDtSbnmeCTU+qgNQwGPwsbv1iFlIqxwAlEAsAHwmiMoI7MjO7oY+Y+VxkEh6TuexIqkTocPIwcKrGxID6XwVgjADiK/EQGuY0tZjMbfjA0A6vwLIJpTZ7zcGpHafhw0fEf9ZMtBYyAxs1B+NaHVCol+cQiCZhMGAUQg8k4+OYiAAzMANwCp3I/pXszgY4MNm1nKCQIu4oxRP9IMBOgtsFZCbC+doqyyrDLO0xHbhyXzwA4C2+9i6YDJA58Js4zZBHgAOPWA1BErfWR1P9cv/CxZjMhNbDufRLXtBJb0Hqo43Xcf+7kv/l7jlH/ru9OyCv5F0iCNc7vbtAAAAAElFTkSuQmCC"
+                                    alt="lowongan kerja subang"
+                                />
+                                  <span class=" item-title text-center">Berita Karawang Terkini</span>
+                        </a>
+                    </div>
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
+                           href="https://web.facebook.com/groups/274465797148650/"
+                           data-id="261652" data-type="page_item">
+                                                            <img
+                                    class="link-each-image"
+                                    data-src="https://img2.pngdownload.id/20180426/isq/kisspng-internet-forum-computer-icons-online-chat-blog-cli-5ae156f2779c78.3492907215247172984899.jpg"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTklEQVRYhYVXW5YdIQgs0Ow7i8uupoV8CFLadnLPcfqlUBZQOKK//zgcABxwq2Gj7ueE+ROdQxXQNofkVQERADLnOtsc0+ayOwB3KNteP7++pKu/bucax9rM/hG7n3ruZcxrvJ55aLEFATwGJObahYF4f9p0R786zEWLPtqN+BwAoAJYOFcJ3wkIBdQNML6v0PYdEU8Ydd0AyASQ65RCoG3PAdCGbJDN2liH2T6REeaixUICiERk1vI5AYgcLFJi5xVXAJSt9hwAPIxHFZgBaoDG7s3m+8UAKJzMaIHqsEETbXeeAGwcAGQ6kgZoDxBRisaleDJLzs0AfAJ4gPEUCKJshiG1oAE6AkTqQXxbDHgxcIJ45QDvPgGMH8qFIw80GWAQSoKEYu5CfwAYO0p7gDEmgPETAJgFRNkxA3xtBwCEBlByvwFgj/94dgDJQoYLKPnVB2i/9jxIAFkJrxI/Q8C1OgjAwyCCBc6DpN1sMtAuYSDVqyqrqiIGuPwYxMFChkG0Ym8GtNid9kpEuTWlLyGyMPAvEPZE+SSAcOzRXFrutFUIMg8+Abx6wBeQCAMzsNaV8qKhlFEukvwGYG/npxxv4sQAUMo4FAA5FScA/2NgxYnRnjrOGRxCJwFQ22GYG9LF5kpCQ6dipWsuons+N7DR7R1NleNdftjuHbqAMmAgkojv43nd89D7e2RnZLuESoC+JvjNMLXe7IBpRRRoKUZapcf3kg0JBQYMDuiVNBfnSgabYuLNJGwlPK3P+l+AzjK0Co35tBc5dwdwOvYWzgXrLJhK2H4RgL4L0cqVPDtSbnmeCTU+qgNQwGPwsbv1iFlIqxwAlEAsAHwmiMoI7MjO7oY+Y+VxkEh6TuexIqkTocPIwcKrGxID6XwVgjADiK/EQGuY0tZjMbfjA0A6vwLIJpTZ7zcGpHafhw0fEf9ZMtBYyAxs1B+NaHVCol+cQiCZhMGAUQg8k4+OYiAAzMANwCp3I/pXszgY4MNm1nKCQIu4oxRP9IMBOgtsFZCbC+doqyyrDLO0xHbhyXzwA4C2+9i6YDJA58Js4zZBHgAOPWA1BErfWR1P9cv/CxZjMhNbDufRLXtBJb0Hqo43Xcf+7kv/l7jlH/ru9OyCv5F0iCNc7vbtAAAAAElFTkSuQmCC"
+                                    alt="lowongan kerja subang"
+                                />
+                                  <span class=" item-title text-center">Berita Karawang Terkini</span>
+                        </a>
+                    </div>
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
+                           href="https://web.facebook.com/groups/sourcecodephp/"
+                           data-id="261652" data-type="page_item">
+                                                            <img
+                                    class="link-each-image"
+                                    data-src="https://img2.pngdownload.id/20180426/isq/kisspng-internet-forum-computer-icons-online-chat-blog-cli-5ae156f2779c78.3492907215247172984899.jpg"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTklEQVRYhYVXW5YdIQgs0Ow7i8uupoV8CFLadnLPcfqlUBZQOKK//zgcABxwq2Gj7ueE+ROdQxXQNofkVQERADLnOtsc0+ayOwB3KNteP7++pKu/bucax9rM/hG7n3ruZcxrvJ55aLEFATwGJObahYF4f9p0R786zEWLPtqN+BwAoAJYOFcJ3wkIBdQNML6v0PYdEU8Ydd0AyASQ65RCoG3PAdCGbJDN2liH2T6REeaixUICiERk1vI5AYgcLFJi5xVXAJSt9hwAPIxHFZgBaoDG7s3m+8UAKJzMaIHqsEETbXeeAGwcAGQ6kgZoDxBRisaleDJLzs0AfAJ4gPEUCKJshiG1oAE6AkTqQXxbDHgxcIJ45QDvPgGMH8qFIw80GWAQSoKEYu5CfwAYO0p7gDEmgPETAJgFRNkxA3xtBwCEBlByvwFgj/94dgDJQoYLKPnVB2i/9jxIAFkJrxI/Q8C1OgjAwyCCBc6DpN1sMtAuYSDVqyqrqiIGuPwYxMFChkG0Ym8GtNid9kpEuTWlLyGyMPAvEPZE+SSAcOzRXFrutFUIMg8+Abx6wBeQCAMzsNaV8qKhlFEukvwGYG/npxxv4sQAUMo4FAA5FScA/2NgxYnRnjrOGRxCJwFQ22GYG9LF5kpCQ6dipWsuons+N7DR7R1NleNdftjuHbqAMmAgkojv43nd89D7e2RnZLuESoC+JvjNMLXe7IBpRRRoKUZapcf3kg0JBQYMDuiVNBfnSgabYuLNJGwlPK3P+l+AzjK0Co35tBc5dwdwOvYWzgXrLJhK2H4RgL4L0cqVPDtSbnmeCTU+qgNQwGPwsbv1iFlIqxwAlEAsAHwmiMoI7MjO7oY+Y+VxkEh6TuexIqkTocPIwcKrGxID6XwVgjADiK/EQGuY0tZjMbfjA0A6vwLIJpTZ7zcGpHafhw0fEf9ZMtBYyAxs1B+NaHVCol+cQiCZhMGAUQg8k4+OYiAAzMANwCp3I/pXszgY4MNm1nKCQIu4oxRP9IMBOgtsFZCbC+doqyyrDLO0xHbhyXzwA4C2+9i6YDJA58Js4zZBHgAOPWA1BErfWR1P9cv/CxZjMhNbDufRLXtBJb0Hqo43Xcf+7kv/l7jlH/ru9OyCv5F0iCNc7vbtAAAAAElFTkSuQmCC"
+                                    alt="lowongan kerja subang"
+                                />
+                                  <span class=" item-title text-center">Belajar Pemrograman</span>
+                        </a>
+                    </div>
+                </div>
 
             </div>
 
         </div>
+        <div class="fixed-tabs-Whats">
+            <div class="aba-whatsphone">
+              <div class="aba-whatsphone-icone">
+                <a target="_blank" href="https://wa.me/6283815432987?text=Hallo%20Admin%20Rumahku">Pasang Iklan <br><strong>Chat Admin!</strong></a>          
+              </div>
+            </div>          
+          </div>
 </body>
     <script type="text/javascript">
         var _paq = window._paq = window._paq || [];
