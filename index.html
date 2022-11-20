@@ -171,11 +171,76 @@
   display: block;
   font-size: 21px;
   margin-left: 70px;
-}       
-    </style>
-    <style>
-            </style>
+} 
+        .logo {
+  width: 90%;
+  max-width: 310px;
+}
 
+.name {
+  margin: 0 0 0 2.25em;
+  font-size: 3rem;
+  z-index: -2;
+  position: relative;
+}
+
+.name::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #282828;
+  animation: slide 1s ease-in-out 3.2s forwards;
+}
+
+.icon {
+  display: inline-block;
+  transform: scale(1.4);
+  position: relative;
+  left: 100px;
+  animation: zoom-out 500ms ease 2s forwards,
+    go-left 650ms ease 2.75s forwards;
+}
+
+.icon::before {
+  font-family: 'Font Awesome 5 Brands';
+  content: '\f167';  
+  position: absolute;
+  font-size: 5rem;
+  top: -15px;
+  left: 0;
+  color: red;
+}
+
+.icon::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: white;
+  left: 28px;
+  top: 16px;
+  z-index: -1;
+}
+
+@keyframes slide {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes zoom-out {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes go-left {
+  to {
+    left: 0;
+  }
+}
+    </style>
+   
 </head>
 
 <body>
@@ -219,9 +284,12 @@
             alt="Cuan Online"
         />
         <h2 class="page-title page-text-color page-text-font mt-16 text-center">
-            RUMAHKU
+           <a target="_blank" rel="noopener nofollow" href="https://www.youtube.com/channel/UCQT2D2ixWyczpiz-dm5JkOQ"> RUMAHKU </a>
                 </h2>
-     
+     <div class="logo">
+  <a target="_blank" rel="noopener nofollow" href="https://www.youtube.com/channel/UCQT2D2ixWyczpiz-dm5JkOQ"> <span class="icon"></span>
+  <h1 class="name">YouTube</h1></a>
+</div>
                     <div class="flex-both-center flex-wrap mt-24">
                         <div class="page-social relative">
                         <a class="social-icon-anchor" data-id="youtube" data-type="social_link" target="_blank" rel="noopener nofollow" href="https://www.youtube.com/channel/UCQT2D2ixWyczpiz-dm5JkOQ"></a>
@@ -423,7 +491,20 @@ Lihat Produk
                                              <span class=" item-title text-center">Tools Marketing</span>
                                     </a>
                                 </div>
-                               
+                               <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
+                           href="https://www.score808.eu.org/p/link-streaming.html"
+                           data-id="261652" data-type="page_item">
+                                                            <img
+                                    class="link-each-image"
+                                    data-src="https://cdn.bio.link/uploads/thumbnails/2021-12-21/JJXHLE1o2KenUtYFxE3aKXruZaBu63VU.png"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTklEQVRYhYVXW5YdIQgs0Ow7i8uupoV8CFLadnLPcfqlUBZQOKK//zgcABxwq2Gj7ueE+ROdQxXQNofkVQERADLnOtsc0+ayOwB3KNteP7++pKu/bucax9rM/hG7n3ruZcxrvJ55aLEFATwGJObahYF4f9p0R786zEWLPtqN+BwAoAJYOFcJ3wkIBdQNML6v0PYdEU8Ydd0AyASQ65RCoG3PAdCGbJDN2liH2T6REeaixUICiERk1vI5AYgcLFJi5xVXAJSt9hwAPIxHFZgBaoDG7s3m+8UAKJzMaIHqsEETbXeeAGwcAGQ6kgZoDxBRisaleDJLzs0AfAJ4gPEUCKJshiG1oAE6AkTqQXxbDHgxcIJ45QDvPgGMH8qFIw80GWAQSoKEYu5CfwAYO0p7gDEmgPETAJgFRNkxA3xtBwCEBlByvwFgj/94dgDJQoYLKPnVB2i/9jxIAFkJrxI/Q8C1OgjAwyCCBc6DpN1sMtAuYSDVqyqrqiIGuPwYxMFChkG0Ym8GtNid9kpEuTWlLyGyMPAvEPZE+SSAcOzRXFrutFUIMg8+Abx6wBeQCAMzsNaV8qKhlFEukvwGYG/npxxv4sQAUMo4FAA5FScA/2NgxYnRnjrOGRxCJwFQ22GYG9LF5kpCQ6dipWsuons+N7DR7R1NleNdftjuHbqAMmAgkojv43nd89D7e2RnZLuESoC+JvjNMLXe7IBpRRRoKUZapcf3kg0JBQYMDuiVNBfnSgabYuLNJGwlPK3P+l+AzjK0Co35tBc5dwdwOvYWzgXrLJhK2H4RgL4L0cqVPDtSbnmeCTU+qgNQwGPwsbv1iFlIqxwAlEAsAHwmiMoI7MjO7oY+Y+VxkEh6TuexIqkTocPIwcKrGxID6XwVgjADiK/EQGuY0tZjMbfjA0A6vwLIJpTZ7zcGpHafhw0fEf9ZMtBYyAxs1B+NaHVCol+cQiCZhMGAUQg8k4+OYiAAzMANwCp3I/pXszgY4MNm1nKCQIu4oxRP9IMBOgtsFZCbC+doqyyrDLO0xHbhyXzwA4C2+9i6YDJA58Js4zZBHgAOPWA1BErfWR1P9cv/CxZjMhNbDufRLXtBJb0Hqo43Xcf+7kv/l7jlH/ru9OyCv5F0iCNc7vbtAAAAAElFTkSuQmCC"
+                                    alt="live streaming piala dunia"
+                                />
+                                         <span class=" item-title text-center">Live Streaming Piala Dunia</span>
+                        </a>
+                    </div>
                     <div class="page-item-wrap relative">
                         <div class="page-item flex-both-center absolute"></div>
                         <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
@@ -480,20 +561,7 @@ Lihat Produk
                                          <span class=" item-title text-center">Subang Kota Jawabarat</span>
                         </a>
                     </div>
-                                    <div class="page-item-wrap relative">
-                        <div class="page-item flex-both-center absolute"></div>
-                        <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
-                           href="https://web.facebook.com/livestream808"
-                           data-id="261652" data-type="page_item">
-                                                            <img
-                                    class="link-each-image"
-                                    data-src="https://cdn.bio.link/uploads/thumbnails/2021-12-21/JJXHLE1o2KenUtYFxE3aKXruZaBu63VU.png"
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTklEQVRYhYVXW5YdIQgs0Ow7i8uupoV8CFLadnLPcfqlUBZQOKK//zgcABxwq2Gj7ueE+ROdQxXQNofkVQERADLnOtsc0+ayOwB3KNteP7++pKu/bucax9rM/hG7n3ruZcxrvJ55aLEFATwGJObahYF4f9p0R786zEWLPtqN+BwAoAJYOFcJ3wkIBdQNML6v0PYdEU8Ydd0AyASQ65RCoG3PAdCGbJDN2liH2T6REeaixUICiERk1vI5AYgcLFJi5xVXAJSt9hwAPIxHFZgBaoDG7s3m+8UAKJzMaIHqsEETbXeeAGwcAGQ6kgZoDxBRisaleDJLzs0AfAJ4gPEUCKJshiG1oAE6AkTqQXxbDHgxcIJ45QDvPgGMH8qFIw80GWAQSoKEYu5CfwAYO0p7gDEmgPETAJgFRNkxA3xtBwCEBlByvwFgj/94dgDJQoYLKPnVB2i/9jxIAFkJrxI/Q8C1OgjAwyCCBc6DpN1sMtAuYSDVqyqrqiIGuPwYxMFChkG0Ym8GtNid9kpEuTWlLyGyMPAvEPZE+SSAcOzRXFrutFUIMg8+Abx6wBeQCAMzsNaV8qKhlFEukvwGYG/npxxv4sQAUMo4FAA5FScA/2NgxYnRnjrOGRxCJwFQ22GYG9LF5kpCQ6dipWsuons+N7DR7R1NleNdftjuHbqAMmAgkojv43nd89D7e2RnZLuESoC+JvjNMLXe7IBpRRRoKUZapcf3kg0JBQYMDuiVNBfnSgabYuLNJGwlPK3P+l+AzjK0Co35tBc5dwdwOvYWzgXrLJhK2H4RgL4L0cqVPDtSbnmeCTU+qgNQwGPwsbv1iFlIqxwAlEAsAHwmiMoI7MjO7oY+Y+VxkEh6TuexIqkTocPIwcKrGxID6XwVgjADiK/EQGuY0tZjMbfjA0A6vwLIJpTZ7zcGpHafhw0fEf9ZMtBYyAxs1B+NaHVCol+cQiCZhMGAUQg8k4+OYiAAzMANwCp3I/pXszgY4MNm1nKCQIu4oxRP9IMBOgtsFZCbC+doqyyrDLO0xHbhyXzwA4C2+9i6YDJA58Js4zZBHgAOPWA1BErfWR1P9cv/CxZjMhNbDufRLXtBJb0Hqo43Xcf+7kv/l7jlH/ru9OyCv5F0iCNc7vbtAAAAAElFTkSuQmCC"
-                                    alt="live streaming piala dunia"
-                                />
-                                         <span class=" item-title text-center">Live Streaming Piala Dunia</span>
-                        </a>
-                    </div>
+                                    
                                     <div class="page-item-wrap relative">
                         <div class="page-item flex-both-center absolute"></div>
                         <a target="_blank" rel="noopener nofollow" class="page-item-each py-10 flex-both-center"
